@@ -1,0 +1,22 @@
+{{ $education := .Params.education }}
+
+<div class="sectionTitle">
+  <h1>{{ $education.header_name }}</h1>
+</div>
+<hr/>
+<div class="sectionContent">
+  {{ range $index, $element := $education.list }}
+    <article>
+      <h2 class="subTitle">{{ $element.major }} ({{ delimit $element.other ", " }}) at {{ $element.school }}
+        <span class="date">{{ $element.start_date }} - {{ $element.end_date }}</span>
+      </h2>
+      <p class="subDetails">Minor in {{ $element.minor }}</p>
+      <ul class="subBullets">
+        {{ range $element.bullets }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </article>
+  {{ end }}
+</div>
+<div class="clear"></div>

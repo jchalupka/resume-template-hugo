@@ -1,0 +1,22 @@
+{{ $personal_projects := .Params.personal_projects }}
+
+<div class="sectionTitle">
+  <h1>{{ $personal_projects.header_name }}</h1>
+</div>
+<hr/>
+
+<div class="sectionContent">
+  {{ range $index, $element := $personal_projects.list }}
+    <article>
+      <h2 class="subTitle">{{ $element.project_title }}
+        <span class="date">{{ $element.start_date }} - {{ $element.end_date }}</span>
+      </h2>
+      <ul class="subBullets">
+        {{ range $element.bullets }}
+          <li>{{ . }}</li>
+        {{ end }}
+      <ul>
+    </article>
+  {{ end }}
+</div>
+<div class="clear"></div>

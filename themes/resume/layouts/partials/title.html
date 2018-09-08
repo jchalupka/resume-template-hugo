@@ -1,0 +1,29 @@
+{{/*  {{ $recent_education := (index (.Params.education.list) 0) }}  */}}
+
+<div class="mainDetails">
+  <div class="center">
+    <div id="name">
+      <h1 style="clear:both;">
+        <div style="display:inline-block">{{ .Params.first_name }}</div>
+        <div style="display:inline-block">{{ .Params.last_name }}</div>
+      </h1>
+      <hr>
+      
+      {{/*  <h2>{{ $recent_education.major }} | {{ $recent_education.minor }}</h2>  */}}
+      {{/*  <h2 class="major">{{ $recent_education.major }} Major, {{ $recent_education.minor }} Minor</h2>  */}}
+      <div style="clear: both; display:block">
+        <h2 class="contact">
+          <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a>
+        </h2>
+
+        <h2 class="contact">
+          <a href="http://www.{{ .Params.website }}" target="_blank">{{ .Params.website }}</a>
+        </h2>
+
+        <h2 class="contact">
+          <a href="tel:{{ .Params.phone }}">{{ .Params.phone }}</a>
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+
+theme = "resume"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  mood = "moods"
+
+

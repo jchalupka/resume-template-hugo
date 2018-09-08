@@ -1,0 +1,25 @@
+{{ $work_experience := .Params.work_experience }}
+
+<div class="sectionTitle">
+  <h1>{{ $work_experience.header_name }}</h1>
+</div>
+<hr>
+
+<div class="sectionContent">
+  {{ range $index, $element := $work_experience.list }}
+    <article>
+      <h2 class="subTitle">{{ $element.company_name }}
+        <span class="date">{{ $element.start_date }} - {{ $element.end_date }}</span>
+      </h2>
+      <p class="subDetails">{{ $element.job_title }}</p>
+      <ul class="subBullets">
+        {{ range $element.bullets }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </article>
+  {{ end }}
+</div>
+<div class="clear"></div>
+
+<div class="clear"></div>

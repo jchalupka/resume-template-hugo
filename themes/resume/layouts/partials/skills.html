@@ -1,0 +1,19 @@
+{{ $skills := .Params.skills }}
+
+<div class="sectionTitle">
+  <h1>{{ $skills.header_name }}</h1>
+</div>
+
+<hr/>
+
+<div class="sectionContent">
+  <article style="padding-bottom:10px;">
+    {{ range $index, $element := $skills.list }}
+    <div class="inline">
+      <h2 class="subTitle">{{ $element.title }}:</h2>
+      <h2>{{ $element.text }}</h2>
+    </div>
+    {{ end }}
+  </article>
+</div>
+<div class="clear"></div>
