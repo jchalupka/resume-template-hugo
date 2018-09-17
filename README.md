@@ -3,7 +3,7 @@
 ## Overview
 Uses a markdown file to create an easily custimizable resume.
 
-![esum](/Users/JordanChalupka/summer/resume_maker/screenshots/resume.png)
+![resume](./screenshots/resume.png)
 
 
 ## Getting Started
