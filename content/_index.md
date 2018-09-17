@@ -59,13 +59,21 @@ work_experience:
 personal_projects:
   header_name: Personal Projects
   list:
-    - project_title: Knock Knock Joke Twitter Bot
-      start_date: July 2018
-      end_date: August 2018
+    # - project_title: Knock Knock Joke Twitter Bot
+    #   start_date: July 2018
+    #   end_date: August 2018
+    #   bullets:
+    #     - Uses webhooks to trigger an AWS Lambda function behind API Gateway which answers to knock-knock jokes and joke requests.
+    #     - Lambda function is written in Golang and utilizes the Twitter API.
+    #     - AWS services managed using Terraform.
+
+    - project_title: Hugo Resume Templator
+      start_date: August 2018
+      end_date: September 2018
       bullets:
-        - Uses webhooks to trigger an AWS Lambda function behind API Gateway which answers to knock-knock jokes and joke requests.
-        - Lambda function is written in Golang and utilizes the Twitter API.
-        - AWS services managed using Terraform.
+        - Utilized the Hugo framework to create a simple and easy to use resume templating system.
+        - Resume content is entered using a YAML configuration file.
+        - Created a Hugo theme to customize the visual appearance of the resume.
   
     - project_title: Library Renewal Automator
       start_date: May 2018
@@ -113,9 +121,10 @@ education:
   list:
     - major: Software Engineering
       minor: Statistics
+      gpa: 3.7
       other:
         - Co-op
       school: University of Guelph
       start_date: September 2015
-      end_date: Present
+      end_date: May 2020
 ---
